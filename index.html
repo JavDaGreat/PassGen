@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="32x32" href="./images/techover.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="main">
+      <h3 class="title">Password Generator</h3>
+      <div class="result-container">
+        <p id="password">To be generated...</p>
+        <a href="#" id="copy-button">
+          <svg
+            class="copy-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 16 16">
+            <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+              <path
+                d="m4 4l1-1h5.414L14 6.586V14l-1 1H5l-1-1zm9 3l-3-3H5v10h8z" />
+              <path d="M3 1L2 2v10l1 1V2h6.414l-1-1z" />
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class="generate-container">
+        <div class="length-container">
+          <p>Character length</p>
+          <div class="length-result">5</div>
+        </div>
+        <div class="slider-container">
+          <input type="range" min="1" max="30" value="10" class="slider" />
+        </div>
+        <div class="checkbox-container">
+          <label class="checkbox-button">
+            <img
+              src="./images/checkmark.svg"
+              alt="Checked"
+              class="checkbox-img" />
+            <input
+              type="checkbox"
+              class="checkbox"
+              id="include-uppercase"
+              checked />
+          </label>
+          <p>Include Uppercase Letters</p>
+        </div>
+        <div class="checkbox-container">
+          <label class="checkbox-button">
+            <img
+              src="./images/checkmark.svg"
+              alt="Checked"
+              class="checkbox-img" />
+            <input
+              type="checkbox"
+              class="checkbox"
+              id="include-lowercase"
+              checked />
+          </label>
+          <p>Include Lowercase Letters</p>
+        </div>
+        <div class="checkbox-container">
+          <label class="checkbox-button">
+            <img
+              src="./images/checkmark.svg"
+              alt="Checked"
+              class="checkbox-img" />
+            <input
+              type="checkbox"
+              class="checkbox"
+              id="include-numbers"
+              checked />
+          </label>
+          <p>Include Numbers</p>
+        </div>
+        <div class="checkbox-container">
+          <label class="checkbox-button">
+            <img
+              src="./images/checkmark.svg"
+              alt="Checked"
+              class="checkbox-img" />
+            <input type="checkbox" class="checkbox" id="include-symbols" />
+          </label>
+          <p>Include Symbols</p>
+        </div>
+        <div class="checkbox-container">
+          <label class="checkbox-button">
+            <img
+              src="./images/checkmark.svg"
+              alt="Checked"
+              class="checkbox-img" />
+            <input type="checkbox" class="checkbox" id="include-simple" />
+          </label>
+          <p>Include Simple Symbols</p>
+        </div>
+        <div class="complex-container">
+          <p id="complex-text">Strength</p>
+          <div class="complex-level-container">
+            <p id="complex-level-text">...</p>
+            <div class="level-container">
+              <div class="level" id="level1"></div>
+              <div class="level" id="level2"></div>
+              <div class="level" id="level3"></div>
+              <div class="level" id="level4"></div>
+            </div>
+          </div>
+        </div>
+        <button id="generate-button">Generate</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
