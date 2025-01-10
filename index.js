@@ -28,7 +28,7 @@ window.onload = function () {
 
   //ingredienser
   const upperLetters = "ABCDEFGHJKLMNPQRSTUWXYZ";
-  const lowerLetters = "abcdefghjkmnopqrstuwxyz";
+  const lowerLetters = "abcdefghjkmnpqrstuwxyz";
   const numbers = "123456789";
   const symbols = "#$%^&*()-_+.,;:`~|[]{}";
   const simple = "!?@#";
